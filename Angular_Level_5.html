@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="store">
+	<head>
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="Angular_Level_5.css" />
+	</head>
+	<body  ng-controller="StoreController as store">
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="product in store.products">
+				<h3><product-title></product-title></h3>	
+				<product-gallery></product-gallery>
+				<div>
+					<product-panels></product-panels>
+				</div>
+			</li>
+		</ul>
+		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="app_Angular_Level_5.js"></script>
+		<script type="text/javascript" src="Angular_Level_5_products.js"></script>
+	</body>
+</html>
